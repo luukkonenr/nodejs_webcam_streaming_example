@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <img id="image">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.min.js"></script>
+        <script>
+            const socket = io.connect('http://localhost:3000');
+            socket.on('image', (image) => { //capture 'image'-messages and as they're already encoded as jpg, no need to handle encoding/decoding stuff
+                const imageElm = document.getElementById('image');
+                imageElm.src = `data:image/jpeg;base64,${image}`;
+                // console.log('data');
+            });
+        </script>
+    </body>
+</html>
