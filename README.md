@@ -15,5 +15,8 @@ run
 ```node index.js```
 and go to localhost:3000 to see your webcam
 
-Simple streaming example of usin
+
+
+
+
 Credits to https://www.youtube.com/watch?v=qexy4Ph66JE
